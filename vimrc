@@ -6,19 +6,22 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " let Vundle manage Vundle
-Bundle 'https://github.com/gmarik/vundle' " required! 
+" required!
+Bundle 'https://github.com/gmarik/vundle'  
 
 Bundle 'https://github.com/Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Bundle 'https://github.com/scrooloose/nerdtree'
 nmap wm :NERDTreeToggle<cr>
 Bundle 'https://github.com/klen/python-mode'
-Bundle 'https://github.com/tpope/vim-fugitive.git' " the best Git wrapper
+" the best Git wrapper
+Bundle 'https://github.com/tpope/vim-fugitive.git' 
 Bundle 'https://github.com/mileszs/ack.vim.git'
 Bundle 'https://github.com/fholgado/minibufexpl.vim.git'
 Bundle 'https://github.com/majutsushi/tagbar.git'
 nmap tt :TagbarToggle<cr>
 Bundle 'https://github.com/hynek/vim-python-pep8-indent.git'
-Bundle 'https://github.com/davidhalter/jedi-vim.git' " awesome Python autocompletion with VIM
+" awesome Python autocompletion with VIM
+Bundle 'https://github.com/davidhalter/jedi-vim.git' 
 
 filetype plugin indent on     " required!
 
