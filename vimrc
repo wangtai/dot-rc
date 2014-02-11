@@ -21,7 +21,7 @@ Bundle 'https://github.com/majutsushi/tagbar.git'
 nmap tt :TagbarToggle<cr>
 Bundle 'https://github.com/hynek/vim-python-pep8-indent.git'
 " awesome Python autocompletion with VIM
-Bundle 'https://github.com/davidhalter/jedi-vim.git' 
+" Bundle 'https://github.com/davidhalter/jedi-vim.git' 
 
 filetype plugin indent on     " required!
 
@@ -94,23 +94,30 @@ set list!
 " And set some nice chars to do it with
 set listchars=tab:»\ ,eol:¬
 
+"
 " automatically change window's cwd to file's dir
 set autochdir
 
+"
 " I'm prefer spaces to tabs
 set tabstop=4
 set shiftwidth=4
 set expandtab
 
+"
 " more subtle popup colors
 if has ('gui_running')
 	highlight Pmenu guibg=#cccccc gui=bold
 endif
 
+
+"
 " search highlight & ignore case
 set hlsearch
 set ignorecase smartcase
 
+
+"
 " show cursor location
 set cursorline cursorcolumn
 
@@ -119,12 +126,21 @@ map <C-K> <C-W>k
 map <C-H> <C-W>h
 map <C-L> <C-W>l
 
+
+"
 " miniBufferExplore
 let g:miniBufExplMapWindowNavVim = 1 
 let g:miniBufExplMapWindowNavArrows = 1 
 let g:miniBufExplMapCTabSwitchBufs = 1 
 let g:miniBufExplModSelTarget = 1 
 
+
+"
 " On OSX use system clipboard
 vmap <C-c> y:call system("pbcopy", getreg("\""))<CR>
 nmap <C-v> :call setreg("\"",system("pbpaste"))<CR>p
+
+
+"
+" set <Leader> leader key
+let mapleader="," 
