@@ -22,6 +22,8 @@ nmap tt :TagbarToggle<cr>
 Bundle 'https://github.com/hynek/vim-python-pep8-indent.git'
 " awesome Python autocompletion with VIM
 " Bundle 'https://github.com/davidhalter/jedi-vim.git' 
+Bundle 'https://github.com/jboyens/vim-protobuf.git'
+
 
 filetype plugin indent on     " required!
 
