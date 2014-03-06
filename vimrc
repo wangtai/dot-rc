@@ -140,7 +140,7 @@ let g:miniBufExplModSelTarget = 1
 "
 " On OSX use system clipboard
 vmap <C-c> y:call system("pbcopy", getreg("\""))<CR>
-nmap <C-v> :call setreg("\"",system("pbpaste"))<CR>p
+"nmap <C-v> :call setreg("\"",system("pbpaste"))<CR>p
 
 
 "
